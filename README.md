@@ -1,14 +1,11 @@
-## Cleaner-bot
+## Telegram-bot
 
-Bot removes spam from the groups
-
-### Usage
-
-[`@kleabot`](https://t.me/kleabot)
+Telegram bot template.
 
 ### Build
 
-Execute `./gradlew clean shadowJar`. Your jar will be located at `./build/libs`.
+Execute `./gradlew clean shadowJar`. Your jar will be located at `./build/libs`.  
+You can start bot with command `TOKEN=[your token] java -jar ./build/libs/cleaner-bot-all.jar`
 
 ### Deploy
 
