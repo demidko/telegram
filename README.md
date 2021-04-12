@@ -4,7 +4,7 @@ Telegram bot template.
 
 ### Build
 
-Execute `./gradlew clean build shadowJar`. Your jar will be located at `./build/libs`.  
+Execute `./gradlew clean shadowJar`. Your jar will be located at `./build/libs`.  
 You can start bot with command `TOKEN=[your token] java -jar ./build/libs/cleaner-bot-all.jar`
 
 ### Deploy
