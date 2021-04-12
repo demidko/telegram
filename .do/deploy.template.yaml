@@ -1,0 +1,12 @@
+spec:
+  name: cleaner-bot
+  workers:
+    - name: backend
+      dockerfile_path: Dockerfile
+      github:
+        repo: demidko/cleaner-bot
+        branch: main
+        deploy_on_push: true
+      envs:
+        - key: TOKEN
+          type: SECRET
