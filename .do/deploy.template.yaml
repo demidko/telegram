@@ -1,10 +1,10 @@
 spec:
-  name: cleaner-bot
+  name: telegram-bot
   workers:
     - name: backend
       dockerfile_path: Dockerfile
       github:
-        repo: demidko/cleaner-bot
+        repo: demidko/telegram
         branch: main
         deploy_on_push: true
       envs:
