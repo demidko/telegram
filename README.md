@@ -2,12 +2,18 @@
 
 Telegram bot template.
 
-### Build
+## Build
 
-Execute `./gradlew clean test shadowJar`. Your jar will be located at `./build/libs`.  
-You can start bot with command `TOKEN=[your token] java -jar ./build/libs/cleaner-bot-all.jar`
+```sh
+./gradlew clean test shadowJar
+```
 
-### Deploy
+Self-executable jar will be located in `build/libs`. To start long polling execute command
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue-ghost.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/demidko/cleaner-bot/tree/main)
+```sh
+TOKEN=... java -jar build/libs/*.jar
+```
 
+## Deploy
+
+[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue-ghost.svg)](https://your/repo/link/here)
