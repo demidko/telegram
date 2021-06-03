@@ -1,15 +1,14 @@
 import com.github.kotlintelegrambot.bot
 import com.github.kotlintelegrambot.dispatch
 import com.github.kotlintelegrambot.dispatcher.message
-import org.slf4j.LoggerFactory.getLogger
-import java.lang.System.getenv
+import com.github.kotlintelegrambot.entities.ChatId.Companion.fromId
 
 fun main(args: Array<String>) = bot {
-  val log = getLogger("Bot")
-  token = getenv("TOKEN")
+  token = "TODO: your token here"
   dispatch {
     message {
-      log.info(message.text)
+      val chatId = fromId(message.chat.id)
+      bot.sendMessage(chatId, "Hello, telegram user!")
     }
   }
 }.startPolling()
