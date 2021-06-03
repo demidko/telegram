@@ -4,7 +4,7 @@ COPY src ./src
 COPY build.gradle.kts ./build.gradle.kts
 RUN gradle clean test shadowJar
 
-FROM openjdk:17 as backend
+FROM openjdk:17-buster as backend
 WORKDIR /root
-COPY --from=builder /project/build/libs/*.jar ./app
+COPY --from=builder /project/build/libs/*-all.jar ./app
 ENTRYPOINT ["java", "-jar", "/root/app"]
