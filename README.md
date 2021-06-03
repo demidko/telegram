@@ -1,6 +1,4 @@
-## Telegram-bot
-
-Telegram bot template.
+## Telegram bot template
 
 ## Build
 
