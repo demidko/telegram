@@ -1,15 +1,15 @@
-## Telegram bot template
+# Telegram bot template
 
 ## Build
 
 ```sh
-./gradlew clean test shadowJar
+./gradlew clean build
 ```
 
 Self-executable jar will be located in `build/libs`. To start long polling execute command
 
 ```sh
-TOKEN=... java -jar build/libs/*.jar
+TOKEN=... java -jar build/libs/*-all.jar
 ```
 
 ## Deploy
