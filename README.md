@@ -14,4 +14,4 @@ TOKEN=... java -jar build/libs/*-all.jar
 
 ## Deploy
 
-[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue-ghost.svg)](https://your/repo/link/here)
+[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue-ghost.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/YOUR/REPO/tree/main)
