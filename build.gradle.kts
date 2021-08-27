@@ -3,16 +3,15 @@ repositories {
   maven("https://jitpack.io")
 }
 plugins {
-  kotlin("jvm") version "1.5.20"
-  id("com.github.johnrengelman.shadow") version "6.1.0"
+  kotlin("jvm") version "1.5.30"
+  id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 dependencies {
-  implementation("com.github.demidko:redis-utils:2021.07.02")
-  implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.4")
-  implementation("ch.qos.logback:logback-classic:1.3.0-alpha5")
-  testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
-  testImplementation("com.natpryce:hamkrest:1.8.0.1")
-  testImplementation("io.mockk:mockk:1.11.0")
+  implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.5")
+  implementation("ch.qos.logback:logback-classic:1.3.0-alpha9")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.0-RC1")
+  testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.24")
+  testImplementation("io.mockk:mockk:1.12.0")
 }
 tasks.compileKotlin {
   kotlinOptions.jvmTarget = "16"
