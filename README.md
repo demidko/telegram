@@ -1,15 +1,28 @@
 # Telegram bot template
 
-## Build
+## Usage
 
-```sh
-./gradlew clean build
+1. Make sure you are signed in to your GitHub account, then just
+   click [`here`](https://github.com/demidko/telegram/generate) to use template.
+2. See [Kotlin Telegram bot guide](https://github.com/kotlin-telegram-bot/kotlin-telegram-bot).
+   `App.kt` file is entry point.
+
+## Build with Java
+
+Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with `-all.jar` postfix.
+Now you can run:
+
+```shell
+TOKEN=... java -jar telegram-all.jar
 ```
 
-Self-executable jar will be located in `build/libs`. To start long polling execute command
+## Or, build with Docker
 
-```sh
-TOKEN=... java -jar build/libs/*-all.jar
+Execute `docker build . -t telegram`. Your image will be located at `docker images -a`. Now you can
+run:
+
+```shell
+docker run -it --rm --env TOKEN=... telegram
 ```
 
 ## Deploy
