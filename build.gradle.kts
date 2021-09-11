@@ -8,8 +8,8 @@ plugins {
 }
 dependencies {
   implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.5")
-  implementation("ch.qos.logback:logback-classic:1.3.0-alpha9")
-  testImplementation("org.junit.jupiter:junit-jupiter:5.8.0-RC1")
+  implementation("ch.qos.logback:logback-classic:1.2.6")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.24")
   testImplementation("io.mockk:mockk:1.12.0")
 }
