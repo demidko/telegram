@@ -22,7 +22,7 @@ Execute `docker build . -t telegram`. Your image will be located at `docker imag
 run:
 
 ```shell
-docker run -it --rm --env TOKEN=... telegram
+docker run -v `pwd`:`pwd` -w `pwd` -it --rm --env TOKEN=... telegram
 ```
 
 ## Deploy
