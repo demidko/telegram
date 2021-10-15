@@ -7,7 +7,7 @@ plugins {
   id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 dependencies {
-  implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.5")
+  implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.6")
   implementation("ch.qos.logback:logback-classic:1.2.6")
   testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.24")
